@@ -3,6 +3,7 @@ body {
     display: flex;
     background-color: #282c34;
     transition: all 0.2s linear;
+    align-items: center;
 }
 
 .outline { 
@@ -18,6 +19,13 @@ body {
 }
 
 .card {
-    background-color: white;
-    max-width: 250px;
+    background-color: #ffffff50;
+    max-width: 300px;
+    user-select: none;
+    transition: all 0.2s linear;
+}
+
+.card:hover {
+    scale: 0.95;
+    box-shadow: 0px 5px 10px;
 }

@@ -1,20 +1,23 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    outline: none;
-    border: none;
-}
-
-body {
-    min-height: 100vh;
+body { 
+    min-height: 100vh; 
     display: flex;
-    justify-content: center;
-    align-items: center;
+    background-color: #282c34;
+    transition: all 0.2s linear;
 }
 
+.outline { 
+    border: solid red 1px; 
+}
 
+.card img {
+    aspect-ratio: 1/1;
+    max-height: 200px;
+    max-width: 200px;
+    object-fit: cover;
+    align-self: center;
+}
 
-.outline {
-    border: solid red 1px;
+.card {
+    background-color: white;
+    max-width: 250px;
 }

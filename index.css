@@ -1,13 +1,18 @@
-body { 
-    min-height: 100vh; 
+body {
+    min-height: 100vh;
     display: flex;
     background-color: #282c34;
     transition: all 0.2s linear;
     align-items: center;
 }
 
-.outline { 
-    border: solid red 0px; 
+.outline {
+    border: solid red 1px;
+}
+
+.wrapper {
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
 
 .card img {
@@ -24,15 +29,23 @@ body {
     max-width: 300px;
     user-select: none;
     transition: all 0.2s linear;
+    padding-top: 1em;
 }
 
-.card:hover {
+.col:hover.card {
     scale: 0.8;
     box-shadow: 0px 5px 10px;
 }
 
+.card:hover.card {
+    background-color: #282c3400;
+    color: #282c3400;
+    outline: none;
+    border: none;
+}
+
 .card:hover img {
-    scale: 1.75;
-    transform-origin: 100px 15px 0px;
+    scale: 1.5;
+    transform-origin: top;
     transition: all 0.5s;
 }
